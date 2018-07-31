@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'WSqlJelly_Example' do
+  pod 'WSqlJelly', :path => '../'
+
+  target 'WSqlJelly_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
