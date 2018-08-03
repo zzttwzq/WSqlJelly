@@ -1,0 +1,6 @@
+framework module WSqlJelly {
+  umbrella header "WSqlJelly-umbrella.h"
+
+  export *
+  module * { export * }
+}

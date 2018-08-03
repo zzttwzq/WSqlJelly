@@ -1,0 +1,22 @@
+{
+  "name": "WSqlJelly",
+  "version": "0.1.0",
+  "summary": "A short description of WSqlJelly.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/zzttwzq/WSqlJelly",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zzttwzq": "1076976262@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/zzttwzq/WSqlJelly.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "WSqlJelly/Classes/**/*"
+}

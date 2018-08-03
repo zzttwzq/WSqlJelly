@@ -38,6 +38,16 @@
                ReferencedContainer = "container:WSqlJelly.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1C610B35210FFBAF00512D5B"
+               BuildableName = "WSqlJellyTests.xctest"
+               BlueprintName = "WSqlJellyTests"
+               ReferencedContainer = "container:WSqlJelly.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

@@ -1,0 +1,1100 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		051A816D6DD0CAE13496DDCFE0829167 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 85E250EF19C5B5671AEC10BEB508D087 /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		094973D2D2F1E3B2E772F93C8147C6B9 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EECE81A9AEC1ED1057A9C3C88DBCEBE /* UIApplication+StrictKeyWindow.m */; };
+		18EA4E0D8B74F2B2BBF8F39B49F49BF9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7843C520ED7D11392D872D57034A1BC /* XCTest.framework */; };
+		1AB7934C16CE49DE196FFC7BE7278287 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97545C39C4A5EE2631DD9FFECE76A40 /* SwiftSupport.swift */; };
+		1C610B01210FFB2B00512D5B /* WSqlRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C610AF4210FFB2A00512D5B /* WSqlRecorder.h */; };
+		1C610B02210FFB2B00512D5B /* WSqlRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C610AF4210FFB2A00512D5B /* WSqlRecorder.h */; };
+		1C610B03210FFB2B00512D5B /* WSqlRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C610AF4210FFB2A00512D5B /* WSqlRecorder.h */; };
+		1C610B04210FFB2B00512D5B /* WSqlRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C610AF4210FFB2A00512D5B /* WSqlRecorder.h */; };
+		1C610B05210FFB2B00512D5B /* WSqlTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C610AF5210FFB2A00512D5B /* WSqlTable.m */; };
+		1C610B06210FFB2B00512D5B /* WSqlTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C610AF5210FFB2A00512D5B /* WSqlTable.m */; };
+		1C610B07210FFB2B00512D5B /* WSqlTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C610AF5210FFB2A00512D5B /* WSqlTable.m */; };
+		1C610B08210FFB2B00512D5B /* WSqlTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C610AF5210FFB2A00512D5B /* WSqlTable.m */; };
+		1C610B09210FFB2B00512D5B /* WSqlTable.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C610AF6210FFB2A00512D5B /* WSqlTable.h */; };
+		1C610B0A210FFB2B00512D5B /* WSqlTable.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C610AF6210FFB2A00512D5B /* WSqlTable.h */; };
+		1C610B0B210FFB2B00512D5B /* WSqlTable.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C610AF6210FFB2A00512D5B /* WSqlTable.h */; };
+		1C610B0C210FFB2B00512D5B /* WSqlTable.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C610AF6210FFB2A00512D5B /* WSqlTable.h */; };
+		1C610B0D210FFB2B00512D5B /* WSqlSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C610AF7210FFB2A00512D5B /* WSqlSession.m */; };
+		1C610B0E210FFB2B00512D5B /* WSqlSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C610AF7210FFB2A00512D5B /* WSqlSession.m */; };
+		1C610B0F210FFB2B00512D5B /* WSqlSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C610AF7210FFB2A00512D5B /* WSqlSession.m */; };
+		1C610B10210FFB2B00512D5B /* WSqlSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C610AF7210FFB2A00512D5B /* WSqlSession.m */; };
+		1C610B11210FFB2B00512D5B /* WSqlRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C610AF8210FFB2A00512D5B /* WSqlRecorder.m */; };
+		1C610B12210FFB2B00512D5B /* WSqlRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C610AF8210FFB2A00512D5B /* WSqlRecorder.m */; };
+		1C610B13210FFB2B00512D5B /* WSqlRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C610AF8210FFB2A00512D5B /* WSqlRecorder.m */; };
+		1C610B14210FFB2B00512D5B /* WSqlRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C610AF8210FFB2A00512D5B /* WSqlRecorder.m */; };
+		1C610B19210FFB2B00512D5B /* WFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C610AFA210FFB2A00512D5B /* WFileManager.h */; };
+		1C610B1A210FFB2B00512D5B /* WFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C610AFA210FFB2A00512D5B /* WFileManager.h */; };
+		1C610B1B210FFB2B00512D5B /* WFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C610AFA210FFB2A00512D5B /* WFileManager.h */; };
+		1C610B1C210FFB2B00512D5B /* WFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C610AFA210FFB2A00512D5B /* WFileManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C610B1D210FFB2B00512D5B /* WSqlSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C610AFB210FFB2A00512D5B /* WSqlSession.h */; };
+		1C610B1E210FFB2B00512D5B /* WSqlSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C610AFB210FFB2A00512D5B /* WSqlSession.h */; };
+		1C610B1F210FFB2B00512D5B /* WSqlSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C610AFB210FFB2A00512D5B /* WSqlSession.h */; };
+		1C610B20210FFB2B00512D5B /* WSqlSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C610AFB210FFB2A00512D5B /* WSqlSession.h */; };
+		1C610B21210FFB2B00512D5B /* WFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C610AFC210FFB2A00512D5B /* WFileManager.m */; };
+		1C610B22210FFB2B00512D5B /* WFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C610AFC210FFB2A00512D5B /* WFileManager.m */; };
+		1C610B23210FFB2B00512D5B /* WFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C610AFC210FFB2A00512D5B /* WFileManager.m */; };
+		1C610B24210FFB2B00512D5B /* WFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C610AFC210FFB2A00512D5B /* WFileManager.m */; };
+		1CF2019821118FA3001C6DFA /* NSObject+Whandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CF2019621118FA3001C6DFA /* NSObject+Whandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CF2019921118FA3001C6DFA /* NSObject+Whandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CF2019621118FA3001C6DFA /* NSObject+Whandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CF2019A21118FA3001C6DFA /* NSObject+Whandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CF2019621118FA3001C6DFA /* NSObject+Whandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CF2019B21118FA3001C6DFA /* NSObject+Whandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CF2019621118FA3001C6DFA /* NSObject+Whandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CF2019C21118FA3001C6DFA /* NSObject+Whandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF2019721118FA3001C6DFA /* NSObject+Whandler.m */; };
+		1CF2019D21118FA3001C6DFA /* NSObject+Whandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF2019721118FA3001C6DFA /* NSObject+Whandler.m */; };
+		1CF2019E21118FA3001C6DFA /* NSObject+Whandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF2019721118FA3001C6DFA /* NSObject+Whandler.m */; };
+		1CF2019F21118FA3001C6DFA /* NSObject+Whandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF2019721118FA3001C6DFA /* NSObject+Whandler.m */; };
+		2CB5E4972B5A62CA1D3018C926D02A26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A94602875A48A997AD3F08A33E6EAA /* Foundation.framework */; };
+		2F485B69F51E4F723A38410F31F08550 /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1374B79237CAC07693E99442FBED1F15 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35DD05FD595A6FE7F5A0692D12E319DC /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CEF7D6C5E08AB80E58DABC75D882BC /* UIImage+Diff.m */; };
+		39ECF79C71BE04CEED64101D3BD4C40A /* WSqlJelly-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7496D3E165189A5E5C8A6EC655652351 /* WSqlJelly-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		421CDD701AEE0F2458A84200366CDD0F /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B161931541BFE46DFEA2092EDDDA815 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		47DEE95708BDBD11436162D166CD192E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB6A925DF90E5500E7BDCC094FEBEA7 /* UIKit.framework */; };
+		506D761F91EC3583789A837C559972FE /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4792533D7EE0F440EE722DA4999E845C /* FBSnapshotTestCase-dummy.m */; };
+		5BC12F69E33ABA27B9E0B78128CE336D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D77B07CA7D221E3EC46B93C00BF37CDE /* QuartzCore.framework */; };
+		69DA8B003216466C60F029CBD79897F1 /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5E22F9517F21D3A0251F88FCAB281E /* UIImage+Compare.m */; };
+		7270C6BEF5DC75C82DE085B47D1943E4 /* Pods-WSqlJelly_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 191610280C6D98BD517A5C58A1D9E22F /* Pods-WSqlJelly_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		756564ABAF2892FE7140C92A1CDDCF65 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBFBDCC891B770A2AC9EF0FB164B751 /* UIImage+Snapshot.m */; };
+		8F11FF266F08F7FCC9271D9D2372D4A4 /* Pods-WSqlJelly_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 471FF8EB0F8592CF24394DB2BEE6B43B /* Pods-WSqlJelly_Example-dummy.m */; };
+		9673CF780F48C8E4EC2A331717B1F67C /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = E37899BD4B349060AA147E2A3721D3A2 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4F69F3477A935285620AC3031C5C848 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 052258A488A96C35531FAC73C4F42924 /* FBSnapshotTestController.m */; };
+		A74A57834FAAD887D92627205D52B829 /* WSqlJelly-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC528D0A4E9DD1BBF28870F04942EFE /* WSqlJelly-dummy.m */; };
+		A831BEF4748C7767C53DF0F3FDCFF36C /* Pods-WSqlJelly_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFDAD9180E07683069E13E193853C62 /* Pods-WSqlJelly_Tests-dummy.m */; };
+		B758FB09FE2C06C1B8E36A71A9D76D41 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A11D5B54955E3381F067364E427B571A /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC952FC04FC963C1294DCD619C9B6B3B /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = B9109B8B333B5A1A3E92EFC09EDC10AC /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BE14F2198CDB0DAD98A567981D21C7A1 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 39577E2B806B8B2D019998DE60728F63 /* FBSnapshotTestCase.m */; };
+		BFCE460CC33E8872B7156D4166340178 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E3DB4D092B985E76E227F7F313C6981 /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAFA5E486BCE117A7D8C0FBF9DA6666B /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 432938111B6FF0189EFFEDF2F845B308 /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		D4B20593AA6AEDFD4DF9F16C970C72D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A94602875A48A997AD3F08A33E6EAA /* Foundation.framework */; };
+		DAD9A0E0F40D3984B78A22F8D3CDAB45 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A94602875A48A997AD3F08A33E6EAA /* Foundation.framework */; };
+		DB7A106243AC974FC7EBEB00B506C786 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A2557E7CE20AACCD1B28B1CD1F920D /* FBSnapshotTestCasePlatform.m */; };
+		E733B24702BC6573286EF8193786C429 /* Pods-WSqlJelly_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5418835C7F2DDA50AFD0871E4AC20833 /* Pods-WSqlJelly_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9D7F7460845B663EF638D1469DAE802 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A94602875A48A997AD3F08A33E6EAA /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		17AB2A51488346E67CE7388B34A83893 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF1386E9B61EFA08F736BE4EA7DE29D6;
+			remoteInfo = WSqlJelly;
+		};
+		1819D78339924D6F779139766D5B02CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34CD2E3428AB802BACA62286FF5074B1;
+			remoteInfo = FBSnapshotTestCase;
+		};
+		6193B0986522AD6CB6CED04999663408 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C5F3EC8A1FDE6EB7445778BFED5664C;
+			remoteInfo = "Pods-WSqlJelly_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0232C6081C6BC16AB119E26CDD9097BC /* WSqlJelly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WSqlJelly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0386EBF5F03254FCA59ACC81C0B7DAC8 /* Pods_WSqlJelly_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WSqlJelly_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		052258A488A96C35531FAC73C4F42924 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
+		0595A68242FCBAF58DF3608F7016F040 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B161931541BFE46DFEA2092EDDDA815 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
+		0BC7EA736040686AFF73D9CECE9FBF4A /* Pods-WSqlJelly_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WSqlJelly_Example-resources.sh"; sourceTree = "<group>"; };
+		1374B79237CAC07693E99442FBED1F15 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
+		144107E5D44306DF333B1ACD99F05EDD /* Pods-WSqlJelly_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WSqlJelly_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		17EB0F1AB954A0C7144A0D493FABC24F /* Pods-WSqlJelly_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WSqlJelly_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		18D71F0EFFE21308283A38ECB38332AE /* Pods-WSqlJelly_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WSqlJelly_Example.release.xcconfig"; sourceTree = "<group>"; };
+		191610280C6D98BD517A5C58A1D9E22F /* Pods-WSqlJelly_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WSqlJelly_Tests-umbrella.h"; sourceTree = "<group>"; };
+		1C610AF4210FFB2A00512D5B /* WSqlRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSqlRecorder.h; path = WSqlJelly/Classes/WSqlRecorder.h; sourceTree = "<group>"; };
+		1C610AF5210FFB2A00512D5B /* WSqlTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSqlTable.m; path = WSqlJelly/Classes/WSqlTable.m; sourceTree = "<group>"; };
+		1C610AF6210FFB2A00512D5B /* WSqlTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSqlTable.h; path = WSqlJelly/Classes/WSqlTable.h; sourceTree = "<group>"; };
+		1C610AF7210FFB2A00512D5B /* WSqlSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSqlSession.m; path = WSqlJelly/Classes/WSqlSession.m; sourceTree = "<group>"; };
+		1C610AF8210FFB2A00512D5B /* WSqlRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSqlRecorder.m; path = WSqlJelly/Classes/WSqlRecorder.m; sourceTree = "<group>"; };
+		1C610AFA210FFB2A00512D5B /* WFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WFileManager.h; path = WSqlJelly/Classes/WFileManager.h; sourceTree = "<group>"; };
+		1C610AFB210FFB2A00512D5B /* WSqlSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSqlSession.h; path = WSqlJelly/Classes/WSqlSession.h; sourceTree = "<group>"; };
+		1C610AFC210FFB2A00512D5B /* WFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WFileManager.m; path = WSqlJelly/Classes/WFileManager.m; sourceTree = "<group>"; };
+		1CF2019621118FA3001C6DFA /* NSObject+Whandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+Whandler.h"; path = "WSqlJelly/Classes/NSObject+Whandler.h"; sourceTree = "<group>"; };
+		1CF2019721118FA3001C6DFA /* NSObject+Whandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Whandler.m"; path = "WSqlJelly/Classes/NSObject+Whandler.m"; sourceTree = "<group>"; };
+		1D0CA38A69D5BBBA8D42404DF4B5CFDE /* WSqlJelly.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = WSqlJelly.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1DC528D0A4E9DD1BBF28870F04942EFE /* WSqlJelly-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WSqlJelly-dummy.m"; sourceTree = "<group>"; };
+		1EFDAD9180E07683069E13E193853C62 /* Pods-WSqlJelly_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WSqlJelly_Tests-dummy.m"; sourceTree = "<group>"; };
+		26CB3BB306F545A3D7F4CB41B4B90781 /* Pods-WSqlJelly_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WSqlJelly_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		273094697464E027ED3BEA3C326A5F66 /* WSqlJelly.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WSqlJelly.xcconfig; sourceTree = "<group>"; };
+		2BAC181E33F55CD7F1245C1A04312DEA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2EECE81A9AEC1ED1057A9C3C88DBCEBE /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
+		34FFCBB0BAD7D474D9FEB7EFDBF08B1D /* Pods-WSqlJelly_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WSqlJelly_Tests-resources.sh"; sourceTree = "<group>"; };
+		3599D1152F0415B392D667B3B0AAD511 /* Pods-WSqlJelly_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WSqlJelly_Example.modulemap"; sourceTree = "<group>"; };
+		39577E2B806B8B2D019998DE60728F63 /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
+		3B5E22F9517F21D3A0251F88FCAB281E /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
+		3DBFBDCC891B770A2AC9EF0FB164B751 /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
+		432938111B6FF0189EFFEDF2F845B308 /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
+		471FF8EB0F8592CF24394DB2BEE6B43B /* Pods-WSqlJelly_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WSqlJelly_Example-dummy.m"; sourceTree = "<group>"; };
+		4792533D7EE0F440EE722DA4999E845C /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
+		5418835C7F2DDA50AFD0871E4AC20833 /* Pods-WSqlJelly_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WSqlJelly_Example-umbrella.h"; sourceTree = "<group>"; };
+		58A2557E7CE20AACCD1B28B1CD1F920D /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
+		5A2DD6CDB777ADCF6B2CE253CFA330CE /* Pods-WSqlJelly_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WSqlJelly_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		61059B0D22FCD95A30F5D3409A634EB9 /* Pods-WSqlJelly_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WSqlJelly_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		67E276593855381568F725E69496F29C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EDFABE2457CA89BCFD5D8DCDE986D1A /* Pods-WSqlJelly_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WSqlJelly_Example-frameworks.sh"; sourceTree = "<group>"; };
+		7496D3E165189A5E5C8A6EC655652351 /* WSqlJelly-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WSqlJelly-umbrella.h"; sourceTree = "<group>"; };
+		7B37D7C695D5C6C47A7C093595CD4F06 /* FBSnapshotTestCase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.xcconfig; sourceTree = "<group>"; };
+		7E3DB4D092B985E76E227F7F313C6981 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
+		849FB74395D724C8600188F7F795B5D9 /* Pods_WSqlJelly_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WSqlJelly_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85E250EF19C5B5671AEC10BEB508D087 /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
+		883C34FB973AA380064EC39641CDAE50 /* Pods-WSqlJelly_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WSqlJelly_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		8B7CA5AE73D7BCDF257DEBDF2D693286 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		92EDCC1FC093A055D7E33E38E84AE65D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		966455F05E055AB6DA9E15F98BA29BD3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C8B138DFD18C6E27E2A324A9DF9F570 /* Pods-WSqlJelly_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WSqlJelly_Tests.modulemap"; sourceTree = "<group>"; };
+		A11D5B54955E3381F067364E427B571A /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
+		A7ADDB9E6A111272517600724D935529 /* Pods-WSqlJelly_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WSqlJelly_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B350000D1FA3751276800E6643B3B5EF /* WSqlJelly-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WSqlJelly-prefix.pch"; sourceTree = "<group>"; };
+		B9109B8B333B5A1A3E92EFC09EDC10AC /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
+		B9CEF7D6C5E08AB80E58DABC75D882BC /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
+		BBB6A925DF90E5500E7BDCC094FEBEA7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		C1A94602875A48A997AD3F08A33E6EAA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D77B07CA7D221E3EC46B93C00BF37CDE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		D97545C39C4A5EE2631DD9FFECE76A40 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
+		E37899BD4B349060AA147E2A3721D3A2 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
+		E495FC4051341D3B568A4B83A8E944E3 /* Pods-WSqlJelly_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WSqlJelly_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		E7843C520ED7D11392D872D57034A1BC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EF519A026B10AC73ABBE6E658308B29D /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
+		F10CBDEE32E5F6BDECFB3D41F7DD0B03 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
+		F2BB602CD3C298CCD5B9B034308BEFFF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8D9C8324F55A04B9663688690D8455F /* WSqlJelly.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WSqlJelly.modulemap; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D421A30A1BDB7E1C4216F64D0C939B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAD9A0E0F40D3984B78A22F8D3CDAB45 /* Foundation.framework in Frameworks */,
+				5BC12F69E33ABA27B9E0B78128CE336D /* QuartzCore.framework in Frameworks */,
+				47DEE95708BDBD11436162D166CD192E /* UIKit.framework in Frameworks */,
+				18EA4E0D8B74F2B2BBF8F39B49F49BF9 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31CC8727D9CAB16F0FF4DB10780CAEBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9D7F7460845B663EF638D1469DAE802 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56F17E14F57331B871C3415AD5702CD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CB5E4972B5A62CA1D3018C926D02A26 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98A2CFB40E4C818F73977335F78353BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4B20593AA6AEDFD4DF9F16C970C72D2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03FE0A54EA6558F6E697C7E652E2A79F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0595A68242FCBAF58DF3608F7016F040 /* FBSnapshotTestCase.framework */,
+				849FB74395D724C8600188F7F795B5D9 /* Pods_WSqlJelly_Example.framework */,
+				0386EBF5F03254FCA59ACC81C0B7DAC8 /* Pods_WSqlJelly_Tests.framework */,
+				0232C6081C6BC16AB119E26CDD9097BC /* WSqlJelly.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3EB1A8839A654B1F16EF9E6F67243337 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2287B5EBEAA3C332F8DB9A1E61F5B097 /* FBSnapshotTestCase */ = {
+			isa = PBXGroup;
+			children = (
+				F35791481CAFDD8E7715AE1B44687328 /* Core */,
+				3288FCB8E15F6401DE6220AE5CA1D27B /* Support Files */,
+				99E46DD4AB2256791F111C718CB0EEF8 /* SwiftSupport */,
+			);
+			path = FBSnapshotTestCase;
+			sourceTree = "<group>";
+		};
+		23FD2239DEF0016E07A4DA3E39A0D9BA /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF334E6F2C60557A2B205C0615ABCBAA /* Pods-WSqlJelly_Example */,
+				AB2B6F734B37999FD604888A0A29F7CA /* Pods-WSqlJelly_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3288FCB8E15F6401DE6220AE5CA1D27B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F10CBDEE32E5F6BDECFB3D41F7DD0B03 /* FBSnapshotTestCase.modulemap */,
+				7B37D7C695D5C6C47A7C093595CD4F06 /* FBSnapshotTestCase.xcconfig */,
+				4792533D7EE0F440EE722DA4999E845C /* FBSnapshotTestCase-dummy.m */,
+				EF519A026B10AC73ABBE6E658308B29D /* FBSnapshotTestCase-prefix.pch */,
+				A11D5B54955E3381F067364E427B571A /* FBSnapshotTestCase-umbrella.h */,
+				67E276593855381568F725E69496F29C /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FBSnapshotTestCase";
+			sourceTree = "<group>";
+		};
+		3C5CB5568CFEA29B34FC90FD5AC5CE05 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				8B7CA5AE73D7BCDF257DEBDF2D693286 /* LICENSE */,
+				2BAC181E33F55CD7F1245C1A04312DEA /* README.md */,
+				1D0CA38A69D5BBBA8D42404DF4B5CFDE /* WSqlJelly.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		3EB1A8839A654B1F16EF9E6F67243337 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C1A94602875A48A997AD3F08A33E6EAA /* Foundation.framework */,
+				D77B07CA7D221E3EC46B93C00BF37CDE /* QuartzCore.framework */,
+				BBB6A925DF90E5500E7BDCC094FEBEA7 /* UIKit.framework */,
+				E7843C520ED7D11392D872D57034A1BC /* XCTest.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5F7EB4F4AB6175A210A9A52DA98A727A /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8250539F45596CFEE001534C534D22BD /* WSqlJelly */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				5F7EB4F4AB6175A210A9A52DA98A727A /* Development Pods */,
+				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
+				FBD2D672921284E66F309CA3462F84D6 /* Pods */,
+				03FE0A54EA6558F6E697C7E652E2A79F /* Products */,
+				23FD2239DEF0016E07A4DA3E39A0D9BA /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8250539F45596CFEE001534C534D22BD /* WSqlJelly */ = {
+			isa = PBXGroup;
+			children = (
+				1CF2019621118FA3001C6DFA /* NSObject+Whandler.h */,
+				1CF2019721118FA3001C6DFA /* NSObject+Whandler.m */,
+				1C610AFA210FFB2A00512D5B /* WFileManager.h */,
+				1C610AFC210FFB2A00512D5B /* WFileManager.m */,
+				1C610AF4210FFB2A00512D5B /* WSqlRecorder.h */,
+				1C610AF8210FFB2A00512D5B /* WSqlRecorder.m */,
+				1C610AFB210FFB2A00512D5B /* WSqlSession.h */,
+				1C610AF7210FFB2A00512D5B /* WSqlSession.m */,
+				1C610AF6210FFB2A00512D5B /* WSqlTable.h */,
+				1C610AF5210FFB2A00512D5B /* WSqlTable.m */,
+				3C5CB5568CFEA29B34FC90FD5AC5CE05 /* Pod */,
+				BDFCF8E47943BA7556D423756298D5B2 /* Support Files */,
+			);
+			name = WSqlJelly;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		99E46DD4AB2256791F111C718CB0EEF8 /* SwiftSupport */ = {
+			isa = PBXGroup;
+			children = (
+				D97545C39C4A5EE2631DD9FFECE76A40 /* SwiftSupport.swift */,
+			);
+			name = SwiftSupport;
+			sourceTree = "<group>";
+		};
+		AB2B6F734B37999FD604888A0A29F7CA /* Pods-WSqlJelly_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				92EDCC1FC093A055D7E33E38E84AE65D /* Info.plist */,
+				9C8B138DFD18C6E27E2A324A9DF9F570 /* Pods-WSqlJelly_Tests.modulemap */,
+				5A2DD6CDB777ADCF6B2CE253CFA330CE /* Pods-WSqlJelly_Tests-acknowledgements.markdown */,
+				61059B0D22FCD95A30F5D3409A634EB9 /* Pods-WSqlJelly_Tests-acknowledgements.plist */,
+				1EFDAD9180E07683069E13E193853C62 /* Pods-WSqlJelly_Tests-dummy.m */,
+				26CB3BB306F545A3D7F4CB41B4B90781 /* Pods-WSqlJelly_Tests-frameworks.sh */,
+				34FFCBB0BAD7D474D9FEB7EFDBF08B1D /* Pods-WSqlJelly_Tests-resources.sh */,
+				191610280C6D98BD517A5C58A1D9E22F /* Pods-WSqlJelly_Tests-umbrella.h */,
+				E495FC4051341D3B568A4B83A8E944E3 /* Pods-WSqlJelly_Tests.debug.xcconfig */,
+				17EB0F1AB954A0C7144A0D493FABC24F /* Pods-WSqlJelly_Tests.release.xcconfig */,
+			);
+			name = "Pods-WSqlJelly_Tests";
+			path = "Target Support Files/Pods-WSqlJelly_Tests";
+			sourceTree = "<group>";
+		};
+		BDFCF8E47943BA7556D423756298D5B2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				966455F05E055AB6DA9E15F98BA29BD3 /* Info.plist */,
+				F8D9C8324F55A04B9663688690D8455F /* WSqlJelly.modulemap */,
+				273094697464E027ED3BEA3C326A5F66 /* WSqlJelly.xcconfig */,
+				1DC528D0A4E9DD1BBF28870F04942EFE /* WSqlJelly-dummy.m */,
+				B350000D1FA3751276800E6643B3B5EF /* WSqlJelly-prefix.pch */,
+				7496D3E165189A5E5C8A6EC655652351 /* WSqlJelly-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/WSqlJelly";
+			sourceTree = "<group>";
+		};
+		F35791481CAFDD8E7715AE1B44687328 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E37899BD4B349060AA147E2A3721D3A2 /* FBSnapshotTestCase.h */,
+				39577E2B806B8B2D019998DE60728F63 /* FBSnapshotTestCase.m */,
+				7E3DB4D092B985E76E227F7F313C6981 /* FBSnapshotTestCasePlatform.h */,
+				58A2557E7CE20AACCD1B28B1CD1F920D /* FBSnapshotTestCasePlatform.m */,
+				1374B79237CAC07693E99442FBED1F15 /* FBSnapshotTestController.h */,
+				052258A488A96C35531FAC73C4F42924 /* FBSnapshotTestController.m */,
+				B9109B8B333B5A1A3E92EFC09EDC10AC /* UIApplication+StrictKeyWindow.h */,
+				2EECE81A9AEC1ED1057A9C3C88DBCEBE /* UIApplication+StrictKeyWindow.m */,
+				432938111B6FF0189EFFEDF2F845B308 /* UIImage+Compare.h */,
+				3B5E22F9517F21D3A0251F88FCAB281E /* UIImage+Compare.m */,
+				85E250EF19C5B5671AEC10BEB508D087 /* UIImage+Diff.h */,
+				B9CEF7D6C5E08AB80E58DABC75D882BC /* UIImage+Diff.m */,
+				0B161931541BFE46DFEA2092EDDDA815 /* UIImage+Snapshot.h */,
+				3DBFBDCC891B770A2AC9EF0FB164B751 /* UIImage+Snapshot.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		FBD2D672921284E66F309CA3462F84D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2287B5EBEAA3C332F8DB9A1E61F5B097 /* FBSnapshotTestCase */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FF334E6F2C60557A2B205C0615ABCBAA /* Pods-WSqlJelly_Example */ = {
+			isa = PBXGroup;
+			children = (
+				F2BB602CD3C298CCD5B9B034308BEFFF /* Info.plist */,
+				3599D1152F0415B392D667B3B0AAD511 /* Pods-WSqlJelly_Example.modulemap */,
+				A7ADDB9E6A111272517600724D935529 /* Pods-WSqlJelly_Example-acknowledgements.markdown */,
+				883C34FB973AA380064EC39641CDAE50 /* Pods-WSqlJelly_Example-acknowledgements.plist */,
+				471FF8EB0F8592CF24394DB2BEE6B43B /* Pods-WSqlJelly_Example-dummy.m */,
+				6EDFABE2457CA89BCFD5D8DCDE986D1A /* Pods-WSqlJelly_Example-frameworks.sh */,
+				0BC7EA736040686AFF73D9CECE9FBF4A /* Pods-WSqlJelly_Example-resources.sh */,
+				5418835C7F2DDA50AFD0871E4AC20833 /* Pods-WSqlJelly_Example-umbrella.h */,
+				144107E5D44306DF333B1ACD99F05EDD /* Pods-WSqlJelly_Example.debug.xcconfig */,
+				18D71F0EFFE21308283A38ECB38332AE /* Pods-WSqlJelly_Example.release.xcconfig */,
+			);
+			name = "Pods-WSqlJelly_Example";
+			path = "Target Support Files/Pods-WSqlJelly_Example";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		41FEB724CC718B2D280C55E76F53411D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C610B1A210FFB2B00512D5B /* WFileManager.h in Headers */,
+				1C610B0A210FFB2B00512D5B /* WSqlTable.h in Headers */,
+				1C610B1E210FFB2B00512D5B /* WSqlSession.h in Headers */,
+				1C610B02210FFB2B00512D5B /* WSqlRecorder.h in Headers */,
+				E733B24702BC6573286EF8193786C429 /* Pods-WSqlJelly_Example-umbrella.h in Headers */,
+				1CF2019921118FA3001C6DFA /* NSObject+Whandler.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47DEC0A5EF802461E57C9EAF99CA7AD2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C610B1C210FFB2B00512D5B /* WFileManager.h in Headers */,
+				1C610B0C210FFB2B00512D5B /* WSqlTable.h in Headers */,
+				1C610B20210FFB2B00512D5B /* WSqlSession.h in Headers */,
+				1C610B04210FFB2B00512D5B /* WSqlRecorder.h in Headers */,
+				39ECF79C71BE04CEED64101D3BD4C40A /* WSqlJelly-umbrella.h in Headers */,
+				1CF2019B21118FA3001C6DFA /* NSObject+Whandler.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		781D2A21CB0D1FF889FB8C95D0E47377 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C610B1B210FFB2B00512D5B /* WFileManager.h in Headers */,
+				1C610B0B210FFB2B00512D5B /* WSqlTable.h in Headers */,
+				1C610B1F210FFB2B00512D5B /* WSqlSession.h in Headers */,
+				1C610B03210FFB2B00512D5B /* WSqlRecorder.h in Headers */,
+				7270C6BEF5DC75C82DE085B47D1943E4 /* Pods-WSqlJelly_Tests-umbrella.h in Headers */,
+				1CF2019A21118FA3001C6DFA /* NSObject+Whandler.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DC6F5AC11E37A1EB45C6473C9E800B6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CF2019821118FA3001C6DFA /* NSObject+Whandler.h in Headers */,
+				B758FB09FE2C06C1B8E36A71A9D76D41 /* FBSnapshotTestCase-umbrella.h in Headers */,
+				9673CF780F48C8E4EC2A331717B1F67C /* FBSnapshotTestCase.h in Headers */,
+				1C610B19210FFB2B00512D5B /* WFileManager.h in Headers */,
+				BFCE460CC33E8872B7156D4166340178 /* FBSnapshotTestCasePlatform.h in Headers */,
+				2F485B69F51E4F723A38410F31F08550 /* FBSnapshotTestController.h in Headers */,
+				1C610B1D210FFB2B00512D5B /* WSqlSession.h in Headers */,
+				BC952FC04FC963C1294DCD619C9B6B3B /* UIApplication+StrictKeyWindow.h in Headers */,
+				1C610B01210FFB2B00512D5B /* WSqlRecorder.h in Headers */,
+				CAFA5E486BCE117A7D8C0FBF9DA6666B /* UIImage+Compare.h in Headers */,
+				1C610B09210FFB2B00512D5B /* WSqlTable.h in Headers */,
+				051A816D6DD0CAE13496DDCFE0829167 /* UIImage+Diff.h in Headers */,
+				421CDD701AEE0F2458A84200366CDD0F /* UIImage+Snapshot.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		34CD2E3428AB802BACA62286FF5074B1 /* FBSnapshotTestCase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F28097D43AF5CD8DA838ABD52A053790 /* Build configuration list for PBXNativeTarget "FBSnapshotTestCase" */;
+			buildPhases = (
+				E2E80CCD063D04B57A1A5E140726E8A4 /* Sources */,
+				1D421A30A1BDB7E1C4216F64D0C939B1 /* Frameworks */,
+				9DC6F5AC11E37A1EB45C6473C9E800B6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FBSnapshotTestCase;
+			productName = FBSnapshotTestCase;
+			productReference = 0595A68242FCBAF58DF3608F7016F040 /* FBSnapshotTestCase.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4C5F3EC8A1FDE6EB7445778BFED5664C /* Pods-WSqlJelly_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 280BEE96232E52E199C2DFA384046B73 /* Build configuration list for PBXNativeTarget "Pods-WSqlJelly_Example" */;
+			buildPhases = (
+				6DAEB1796A00A044B0E90B26FD62BD73 /* Sources */,
+				56F17E14F57331B871C3415AD5702CD2 /* Frameworks */,
+				41FEB724CC718B2D280C55E76F53411D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83262CCED41BAB848056326E197EFDFC /* PBXTargetDependency */,
+			);
+			name = "Pods-WSqlJelly_Example";
+			productName = "Pods-WSqlJelly_Example";
+			productReference = 849FB74395D724C8600188F7F795B5D9 /* Pods_WSqlJelly_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7277570A6C18DD857FAB503BCFAB79BE /* Pods-WSqlJelly_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77DE77B1D569770F5444FE653A1B866F /* Build configuration list for PBXNativeTarget "Pods-WSqlJelly_Tests" */;
+			buildPhases = (
+				C1C05759B92E40930D5C08CDC955C1B3 /* Sources */,
+				98A2CFB40E4C818F73977335F78353BC /* Frameworks */,
+				781D2A21CB0D1FF889FB8C95D0E47377 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69CE879C5F40C51BE5E83572B9AC8302 /* PBXTargetDependency */,
+				972E66903468C9B5E1400C5BCEB22F7A /* PBXTargetDependency */,
+			);
+			name = "Pods-WSqlJelly_Tests";
+			productName = "Pods-WSqlJelly_Tests";
+			productReference = 0386EBF5F03254FCA59ACC81C0B7DAC8 /* Pods_WSqlJelly_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AF1386E9B61EFA08F736BE4EA7DE29D6 /* WSqlJelly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 065439983C42A3F7FF1A4C99CCCABBAB /* Build configuration list for PBXNativeTarget "WSqlJelly" */;
+			buildPhases = (
+				D7508EA9BB088289701415DFA30D9595 /* Sources */,
+				31CC8727D9CAB16F0FF4DB10780CAEBC /* Frameworks */,
+				47DEC0A5EF802461E57C9EAF99CA7AD2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WSqlJelly;
+			productName = WSqlJelly;
+			productReference = 0232C6081C6BC16AB119E26CDD9097BC /* WSqlJelly.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 03FE0A54EA6558F6E697C7E652E2A79F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				34CD2E3428AB802BACA62286FF5074B1 /* FBSnapshotTestCase */,
+				4C5F3EC8A1FDE6EB7445778BFED5664C /* Pods-WSqlJelly_Example */,
+				7277570A6C18DD857FAB503BCFAB79BE /* Pods-WSqlJelly_Tests */,
+				AF1386E9B61EFA08F736BE4EA7DE29D6 /* WSqlJelly */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DAEB1796A00A044B0E90B26FD62BD73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F11FF266F08F7FCC9271D9D2372D4A4 /* Pods-WSqlJelly_Example-dummy.m in Sources */,
+				1C610B06210FFB2B00512D5B /* WSqlTable.m in Sources */,
+				1CF2019D21118FA3001C6DFA /* NSObject+Whandler.m in Sources */,
+				1C610B22210FFB2B00512D5B /* WFileManager.m in Sources */,
+				1C610B12210FFB2B00512D5B /* WSqlRecorder.m in Sources */,
+				1C610B0E210FFB2B00512D5B /* WSqlSession.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1C05759B92E40930D5C08CDC955C1B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A831BEF4748C7767C53DF0F3FDCFF36C /* Pods-WSqlJelly_Tests-dummy.m in Sources */,
+				1C610B07210FFB2B00512D5B /* WSqlTable.m in Sources */,
+				1CF2019E21118FA3001C6DFA /* NSObject+Whandler.m in Sources */,
+				1C610B23210FFB2B00512D5B /* WFileManager.m in Sources */,
+				1C610B13210FFB2B00512D5B /* WSqlRecorder.m in Sources */,
+				1C610B0F210FFB2B00512D5B /* WSqlSession.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7508EA9BB088289701415DFA30D9595 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A74A57834FAAD887D92627205D52B829 /* WSqlJelly-dummy.m in Sources */,
+				1C610B08210FFB2B00512D5B /* WSqlTable.m in Sources */,
+				1CF2019F21118FA3001C6DFA /* NSObject+Whandler.m in Sources */,
+				1C610B24210FFB2B00512D5B /* WFileManager.m in Sources */,
+				1C610B14210FFB2B00512D5B /* WSqlRecorder.m in Sources */,
+				1C610B10210FFB2B00512D5B /* WSqlSession.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2E80CCD063D04B57A1A5E140726E8A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				506D761F91EC3583789A837C559972FE /* FBSnapshotTestCase-dummy.m in Sources */,
+				BE14F2198CDB0DAD98A567981D21C7A1 /* FBSnapshotTestCase.m in Sources */,
+				DB7A106243AC974FC7EBEB00B506C786 /* FBSnapshotTestCasePlatform.m in Sources */,
+				1C610B0D210FFB2B00512D5B /* WSqlSession.m in Sources */,
+				A4F69F3477A935285620AC3031C5C848 /* FBSnapshotTestController.m in Sources */,
+				1AB7934C16CE49DE196FFC7BE7278287 /* SwiftSupport.swift in Sources */,
+				1CF2019C21118FA3001C6DFA /* NSObject+Whandler.m in Sources */,
+				094973D2D2F1E3B2E772F93C8147C6B9 /* UIApplication+StrictKeyWindow.m in Sources */,
+				1C610B21210FFB2B00512D5B /* WFileManager.m in Sources */,
+				69DA8B003216466C60F029CBD79897F1 /* UIImage+Compare.m in Sources */,
+				35DD05FD595A6FE7F5A0692D12E319DC /* UIImage+Diff.m in Sources */,
+				756564ABAF2892FE7140C92A1CDDCF65 /* UIImage+Snapshot.m in Sources */,
+				1C610B11210FFB2B00512D5B /* WSqlRecorder.m in Sources */,
+				1C610B05210FFB2B00512D5B /* WSqlTable.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		69CE879C5F40C51BE5E83572B9AC8302 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FBSnapshotTestCase;
+			target = 34CD2E3428AB802BACA62286FF5074B1 /* FBSnapshotTestCase */;
+			targetProxy = 1819D78339924D6F779139766D5B02CE /* PBXContainerItemProxy */;
+		};
+		83262CCED41BAB848056326E197EFDFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WSqlJelly;
+			target = AF1386E9B61EFA08F736BE4EA7DE29D6 /* WSqlJelly */;
+			targetProxy = 17AB2A51488346E67CE7388B34A83893 /* PBXContainerItemProxy */;
+		};
+		972E66903468C9B5E1400C5BCEB22F7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-WSqlJelly_Example";
+			target = 4C5F3EC8A1FDE6EB7445778BFED5664C /* Pods-WSqlJelly_Example */;
+			targetProxy = 6193B0986522AD6CB6CED04999663408 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2C72AF30188840815AC0F134E88DEFB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18D71F0EFFE21308283A38ECB38332AE /* Pods-WSqlJelly_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WSqlJelly_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WSqlJelly_Example/Pods-WSqlJelly_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		46BF4ADD9E29B1A7AF87D63E7286628F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E495FC4051341D3B568A4B83A8E944E3 /* Pods-WSqlJelly_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WSqlJelly_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WSqlJelly_Tests/Pods-WSqlJelly_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5984AD57DCCD5E7AC7F0F9D52F44B803 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17EB0F1AB954A0C7144A0D493FABC24F /* Pods-WSqlJelly_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WSqlJelly_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WSqlJelly_Tests/Pods-WSqlJelly_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A38749C15819B02B742737E489EE0EEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B37D7C695D5C6C47A7C093595CD4F06 /* FBSnapshotTestCase.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
+				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
+				PRODUCT_NAME = FBSnapshotTestCase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AB74B6A60AA3078D80BB7D633DFBCA01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B37D7C695D5C6C47A7C093595CD4F06 /* FBSnapshotTestCase.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
+				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
+				PRODUCT_NAME = FBSnapshotTestCase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ABA12ABF3F7069A70521F45697127945 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 273094697464E027ED3BEA3C326A5F66 /* WSqlJelly.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WSqlJelly/WSqlJelly-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WSqlJelly/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WSqlJelly/WSqlJelly.modulemap";
+				PRODUCT_MODULE_NAME = WSqlJelly;
+				PRODUCT_NAME = WSqlJelly;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AD56E08D45EAB1325248D93BDE7AFF5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 273094697464E027ED3BEA3C326A5F66 /* WSqlJelly.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WSqlJelly/WSqlJelly-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WSqlJelly/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WSqlJelly/WSqlJelly.modulemap";
+				PRODUCT_MODULE_NAME = WSqlJelly;
+				PRODUCT_NAME = WSqlJelly;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B42B54097A876E8A982CBF5DAA91B1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		F11C4446D60CAB266042F9A9F9DFB4F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 144107E5D44306DF333B1ACD99F05EDD /* Pods-WSqlJelly_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WSqlJelly_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WSqlJelly_Example/Pods-WSqlJelly_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		065439983C42A3F7FF1A4C99CCCABBAB /* Build configuration list for PBXNativeTarget "WSqlJelly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABA12ABF3F7069A70521F45697127945 /* Debug */,
+				AD56E08D45EAB1325248D93BDE7AFF5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		280BEE96232E52E199C2DFA384046B73 /* Build configuration list for PBXNativeTarget "Pods-WSqlJelly_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F11C4446D60CAB266042F9A9F9DFB4F0 /* Debug */,
+				2C72AF30188840815AC0F134E88DEFB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */,
+				B42B54097A876E8A982CBF5DAA91B1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77DE77B1D569770F5444FE653A1B866F /* Build configuration list for PBXNativeTarget "Pods-WSqlJelly_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46BF4ADD9E29B1A7AF87D63E7286628F /* Debug */,
+				5984AD57DCCD5E7AC7F0F9D52F44B803 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F28097D43AF5CD8DA838ABD52A053790 /* Build configuration list for PBXNativeTarget "FBSnapshotTestCase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A38749C15819B02B742737E489EE0EEB /* Debug */,
+				AB74B6A60AA3078D80BB7D633DFBCA01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
