@@ -10,8 +10,6 @@
 #import "WSqlSession.h"
 
 @interface WSqlRecorder : NSObject
-@property(nonatomic,assign)int s_id;
-
 
 /**
  创建记录模型

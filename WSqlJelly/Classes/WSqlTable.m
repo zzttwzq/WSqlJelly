@@ -172,7 +172,8 @@
     }
 
     //给单个记录对象赋值
-    NSDictionary *propAndTypes = [obj getPropertiesAndTypes];
+    NSMutableDictionary *propAndTypes = [NSMutableDictionary dictionaryWithDictionary:[obj getPropertiesAndTypes]];
+    [propAndTypes setObject:@"Ti" forKey:@"s_id"];
 
     NSArray *fieldsArray;
     if ([[WSqlQuery query].getSelectFields() containsString:@"*"]) {
@@ -191,7 +192,7 @@
         if ([type containsString:@"Ti"]) {
 
             NSInteger intdata = sqlite3_column_int(statement, i);
-            [obj setValue:@(intdata) forKey:key];
+            [obj setValue:@(intdata) forKeyPath:key];
         }
         else if ([type containsString:@"TB"]) {
 
@@ -234,7 +235,7 @@
  */
 - (BOOL) addColumn:(NSString *)column;
 {
-    [WSqlQuery query].alert(self.tableName).add(column);
+    [WSqlQuery query].alert(self.tableName).addColumn(column);
     return [[WSqlSession session] exeSqlQuery];
 }
 

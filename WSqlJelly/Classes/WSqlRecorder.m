@@ -7,6 +7,12 @@
 
 #import "WSqlRecorder.h"
 
+@interface WSqlRecorder ()
+
+@property(nonatomic,assign)int s_id;
+
+@end
+
 @implementation WSqlRecorder
 {
     NSString *_tableName;
