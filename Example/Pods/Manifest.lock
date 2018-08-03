@@ -1,27 +1,16 @@
 PODS:
-  - FBSnapshotTestCase (2.1.4):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
-  - FBSnapshotTestCase/Core (2.1.4)
-  - FBSnapshotTestCase/SwiftSupport (2.1.4):
-    - FBSnapshotTestCase/Core
   - WSqlJelly (0.1.0)
 
 DEPENDENCIES:
-  - FBSnapshotTestCase
   - WSqlJelly (from `../`)
-
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - FBSnapshotTestCase
 
 EXTERNAL SOURCES:
   WSqlJelly:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   WSqlJelly: 147dbe289088e7cc077076a19007962f56d99bed
 
-PODFILE CHECKSUM: 513a5992d60481b61f668f4cc5b80659566e714d
+PODFILE CHECKSUM: cad5069416259e462660d88429ac77cd2f821d4c
 
 COCOAPODS: 1.5.3

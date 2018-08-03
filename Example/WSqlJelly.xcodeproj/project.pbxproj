@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		083BB295132E6BD5A3FCF93E /* Pods_WSqlJelly_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A07F5EC4A1A478740BE7C1C /* Pods_WSqlJelly_Example.framework */; };
-		1C610B4C210FFD7A00512D5B /* WSqlJelly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C610B4B210FFD7A00512D5B /* WSqlJelly.framework */; };
-		1C610B4D210FFD7A00512D5B /* WSqlJelly.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1C610B4B210FFD7A00512D5B /* WSqlJelly.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -29,7 +27,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1C610B4D210FFD7A00512D5B /* WSqlJelly.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,7 +39,6 @@
 		1C610B31210FFBAF00512D5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C610B3D210FFBAF00512D5B /* WSqlJellyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSqlJellyTests.m; sourceTree = "<group>"; };
 		1C610B3F210FFBAF00512D5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1C610B4B210FFD7A00512D5B /* WSqlJelly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WSqlJelly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C92CE9ACC395E7C7EF605C3 /* Pods-WSqlJelly_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSqlJelly_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WSqlJelly_Tests/Pods-WSqlJelly_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		387BBE52AFD0E60F48CB0919 /* Pods-WSqlJelly_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSqlJelly_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WSqlJelly_Example/Pods-WSqlJelly_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3A07F5EC4A1A478740BE7C1C /* Pods_WSqlJelly_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WSqlJelly_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,7 +74,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C610B4C210FFD7A00512D5B /* WSqlJelly.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
@@ -110,7 +105,6 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
-				1C610B4B210FFD7A00512D5B /* WSqlJelly.framework */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for WSqlJelly */,
 				6003F5B5195388D20070C39A /* Tests */,

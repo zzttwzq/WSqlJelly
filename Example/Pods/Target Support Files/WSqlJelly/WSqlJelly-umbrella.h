@@ -10,8 +10,12 @@
 #endif
 #endif
 
-#import "WSqlDB.h"
-
+#import "NSObject+Whandler.h"
+#import "WFileManager.h"
+#import "WSqlQuery.h"
+#import "WSqlRecorder.h"
+#import "WSqlSession.h"
+#import "WSqlTable.h"
 
 FOUNDATION_EXPORT double WSqlJellyVersionNumber;
 FOUNDATION_EXPORT const unsigned char WSqlJellyVersionString[];
