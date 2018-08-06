@@ -65,7 +65,7 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A86F2096C62709A5D630D28 /* Pods_WSqlJelly_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WSqlJelly_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B52B1C316EEE4AB6180F59A5 /* Pods-WSqlJelly_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSqlJelly_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-WSqlJelly_Example/Pods-WSqlJelly_Example.release.xcconfig"; sourceTree = "<group>"; };
-		CA71B2CACEE680FF9A063831 /* WSqlJelly.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WSqlJelly.podspec; path = ../WSqlJelly.podspec; sourceTree = "<group>"; };
+		CA71B2CACEE680FF9A063831 /* WSqlJelly.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WSqlJelly.podspec; path = ../WSqlJelly.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E513D588F4A3527E519278FC /* Pods-WSqlJelly_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSqlJelly_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WSqlJelly_Tests/Pods-WSqlJelly_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
