@@ -17,7 +17,7 @@
  @param tableName 表名
  @return 返回模型
  */
-+ (WSqlRecorder *) recodeWithTableName:(NSString *)tableName;
+- (instancetype) initWithTableName:(NSString *)tableName;
 
 
 /**
@@ -29,6 +29,23 @@
 
 
 /**
+ 插入新数据或者更新旧的数据
+
+ @return 返回操作结果
+ */
+
+
+
+/**
+ 插入新数据或者更新旧的数据
+
+ @param string 条件
+ @return 返回是否成功
+ */
+- (BOOL) insertOrUpdateOn:(NSString *)string;
+
+
+/**
  插入新数据
 
  @return 返回操作结果
@@ -37,12 +54,29 @@
 
 
 /**
+ 插入新数据
+
+ @param fields 要过滤的字段
+ @return 返回操作结果
+ */
+- (BOOL) insertWithoutFields:(NSArray *)fields;
+
+
+/**
+ 更新数据去掉字段
+
+ @param fields 要去掉的字段
+ @return 返回是否成功
+ */
+- (BOOL) updateWithoutFields:(NSArray *)fields;
+
+
+/**
  更新数据
 
  @return 返回操作结果
  */
 - (BOOL) update;
-
 
 /**
  删除数据

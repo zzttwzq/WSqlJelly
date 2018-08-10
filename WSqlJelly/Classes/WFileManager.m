@@ -466,9 +466,9 @@
  *
  *  @return 磁盘大小
  */
-+(float)allSizeOfDisk;
++(CGFloat)allSizeOfDisk;
 {
-    float size = 0.0;
+    CGFloat size = 0.0;
 
     NSError *error;
 
@@ -494,9 +494,9 @@
  *
  *  @return 可用空间大小
  */
-+(float)freeSizeOfDisk;
++(CGFloat)freeSizeOfDisk;
 {
-    float size = 0.0;
+    CGFloat size = 0.0;
 
     NSError *error;
 
@@ -504,7 +504,7 @@
 
     if (error) {
 
-        float size = 0.0;
+        CGFloat size = 0.0;
 
         NSError *error;
 
@@ -573,6 +573,7 @@
         NSString *filePath = [folderPath stringByAppendingPathComponent:fileName];
 
         folerSize += [self fileSizeAtPath:filePath];
+
     }
     return folerSize;
 }

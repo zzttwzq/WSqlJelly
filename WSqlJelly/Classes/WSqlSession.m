@@ -105,6 +105,11 @@ static dispatch_once_t once;
             return NO;
         }
     }
+    else{
+
+        [WSqlQuery showMessage:[NSString stringWithFormat:@"数据库：%@ 打开失败！",dbname]];
+        return NO;
+    }
 
     return YES;
 }
@@ -120,14 +125,12 @@ static dispatch_once_t once;
 {
     if (sqlString.length > 0) {
 
-        [WSqlQuery showMessage:[NSString stringWithFormat:@"当前sql:%@",sqlString]];
-
         char *err;
         BOOL state = sqlite3_exec(dataBase, [sqlString UTF8String], NULL, NULL, &err) != SQLITE_OK;
 
         if (state) {
 
-            [WSqlQuery showMessage:[NSString stringWithFormat:@"数据库操作数据失败!\n sql:%@ \n err: %s\n",sqlString,err]];
+            [WSqlQuery showMessage:[NSString stringWithFormat:@"数据库操作数据失败! \n [ %@ ] \n err: %s\n",sqlString,err]];
         }
 
         return state;
@@ -141,18 +144,17 @@ static dispatch_once_t once;
 
 
 /**
- 查询数据方法
+ 查询数据，返回字典
 
  @param sqlString sql语句
- @param stepCallBack 循环遍历数据
+ @param fieldsList sql语句
  */
--(void)quaryBysqlString:(NSString *)sqlString
-           stepCallBack:(queryBlock)stepCallBack
-               complete:(void(^)(void))complete;
+- (NSArray *) quaryBySqlString:(NSString *)sqlString
+                    fieldsList:(NSArray *)fieldsList;
 {
-    if (sqlString.length > 0) {
+    NSMutableArray *listArray = [NSMutableArray array];
 
-        [WSqlQuery showMessage:[NSString stringWithFormat:@"当前sql:%@",sqlString]];
+    if (sqlString.length > 0) {
 
         // 预编译
         sqlite3_stmt * statement;
@@ -160,14 +162,26 @@ static dispatch_once_t once;
 
             // 开始执行
             while (sqlite3_step(statement) == SQLITE_ROW) {
-                stepCallBack(statement);
-            }
 
-            complete();
+                NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+                for (int i = 0; i<fieldsList.count; i++) {
+
+                    NSString *key = fieldsList[i];
+                    char *name = (char *)sqlite3_column_text(statement, i);
+                    if (name) {
+                        
+                        NSString *string = [NSString stringWithUTF8String:name];
+                        string = [string stringByRemovingPercentEncoding];
+
+                        [dict setObject:string forKey:key];
+                    }
+                }
+                [listArray addObject:dict];
+            }
         }
         else{
 
-            [WSqlQuery showMessage:[NSString stringWithFormat:@"查询失败! %s",sqlite3_errmsg(dataBase)]];
+            [WSqlQuery showMessage:[NSString stringWithFormat:@"查询失败! \n [ %@ ] \n %s",sqlString,sqlite3_errmsg(dataBase)]];
         }
 
         sqlite3_finalize(statement);
@@ -176,6 +190,8 @@ static dispatch_once_t once;
 
         [WSqlQuery showMessage:@"sql语句不能为空!"];
     }
+
+    return listArray;
 }
 
 
@@ -213,5 +229,14 @@ static dispatch_once_t once;
 - (void) rollBack;
 {
     [self exeSql:@"ROLLBACK;"];
+}
+
+
+/**
+ 设置字符集
+ */
+- (void) setCharactSet
+{
+    [self exeSql:@"SET NAMES utf8;"];
 }
 @end

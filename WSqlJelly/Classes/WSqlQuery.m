@@ -95,7 +95,7 @@ static dispatch_once_t once;
 
     self.limit = ^WSqlQuery *(int page, int limit) {
 
-        weakSelf.sqlString = [weakSelf.sqlString stringByAppendingString:[NSString stringWithFormat:@" LIMIT %d,%d",page*limit,(page+1)*limit]];
+        weakSelf.sqlString = [weakSelf.sqlString stringByAppendingString:[NSString stringWithFormat:@" LIMIT %d,%d",page*limit,limit]];
         return weakSelf;
     };
 
@@ -139,11 +139,24 @@ static dispatch_once_t once;
         return weakSelf;
     };
 
+    self.selectCount = ^WSqlQuery *{
+
+        weakSelf.sqlString = @" SELECT COUNT(*) FROM";
+        return weakSelf;
+    };
+
 
     //============插入数据
     self.insert = ^WSqlQuery *(NSString *string) {
 
         weakSelf.sqlString = [NSString stringWithFormat:@" INSERT INTO %@",string];
+        return weakSelf;
+    };
+
+    
+    self.insertOrReplace = ^WSqlQuery *(NSString *string) {
+
+        weakSelf.sqlString = [NSString stringWithFormat:@" INSERT OR REPLACE INTO %@",string];
         return weakSelf;
     };
 
@@ -204,6 +217,13 @@ static dispatch_once_t once;
 
     //============删除数据
     self.deleteFromeTable = ^WSqlQuery *(NSString *string) {
+
+        weakSelf.sqlString = [NSString stringWithFormat:@" DELETE FROM %@",string];
+        return weakSelf;
+    };
+
+
+    self.deleteAllFromeTable = ^WSqlQuery *(NSString *string) {
 
         weakSelf.sqlString = [NSString stringWithFormat:@" DELETE FROM %@",string];
         return weakSelf;
@@ -468,7 +488,7 @@ static dispatch_once_t once;
 +(void)showMessage:(NSString *)message;
 {
     #ifdef DEBUG
-        NSLog(@" < WSqlSessionHandler > %@",message);
+        NSLog(@" < WSql > %@",message);
     #endif
 }
 @end

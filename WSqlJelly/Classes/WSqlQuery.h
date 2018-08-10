@@ -27,9 +27,12 @@ typedef NSString *(^getStringBlock)(void);
 @interface WSqlQuery : NSObject
 
 @property (nonatomic,copy) stringBlock select;
+@property (nonatomic,copy) voidBlock selectCount;
 @property (nonatomic,copy) stringBlock insert;
+@property (nonatomic,copy) stringBlock insertOrReplace;
 @property (nonatomic,copy) stringBlock update;
 @property (nonatomic,copy) stringBlock deleteFromeTable;
+@property (nonatomic,copy) stringBlock deleteAllFromeTable;
 @property (nonatomic,copy) stringBlock createTable;
 @property (nonatomic,copy) stringBlock alert;
 

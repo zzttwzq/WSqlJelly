@@ -20,19 +20,19 @@ typedef void (^queryBlock)(sqlite3_stmt * _Nullable satement);
 
 #pragma mark - 初始化连接
 /**
- 更改数据库
-
- @param dbName 数据库名称
- */
-- (BOOL) selectDataBaseWithDBName:(NSString *)dbName;
-
-
-/**
  获取全局的session
 
  @return 返回session
  */
 + (WSqlSession *) session;
+
+
+/**
+ 更改数据库
+
+ @param dbName 数据库名称
+ */
+- (BOOL) selectDataBaseWithDBName:(NSString *)dbName;
 
 
 /**
@@ -51,15 +51,6 @@ typedef void (^queryBlock)(sqlite3_stmt * _Nullable satement);
 
 #pragma mark - sql操作
 /**
- 执行sql语句
-
- @param sqlString 要执行的sql语句
- @return 返回执行结果
- */
-- (BOOL) exeSql:(NSString *)sqlString;
-
-
-/**
 执行wsqlquery定义好的sql语句
 
 @return 返回执行结果
@@ -68,14 +59,13 @@ typedef void (^queryBlock)(sqlite3_stmt * _Nullable satement);
 
 
 /**
- 查询数据方法
+ 查询数据，返回字典
 
  @param sqlString sql语句
- @param stepCallBack 循环遍历数据
+ @param fieldsList sql语句
  */
--(void)quaryBysqlString:(NSString *)sqlString
-           stepCallBack:(queryBlock)stepCallBack
-               complete:(void(^)(void))complete;
+-(NSArray *)quaryBySqlString:(NSString *)sqlString
+                  fieldsList:(NSArray *)fieldsList;
 
 
 /**

@@ -18,17 +18,6 @@
     NSString *_tableName;
 }
 
-/**
- 创建记录模型
-
- @param tableName 表名
- @return 返回模型
- */
-+ (WSqlRecorder *) recodeWithTableName:(NSString *)tableName;
-{
-    WSqlRecorder *recode = [[WSqlRecorder alloc] initWithTableName:tableName];
-    return recode;
-}
 
 /**
  创建记录模型
@@ -59,14 +48,42 @@
 
 
 /**
- 插入新数据
+ 插入新数据或者更新旧的数据
 
- @return 返回操作结果
+ @param string 条件
+ @return 返回是否成功
  */
-- (BOOL) insert;
+- (BOOL) insertOrUpdateOn:(NSString *)string;
 {
     NSMutableArray *propArray = [NSMutableArray arrayWithArray:[self getPropertyNames]];
     [propArray removeObject:@"s_id"];
+
+    NSDictionary *propDict = [self getPropertiesAndValues];
+
+    NSMutableArray *valueArray = [NSMutableArray array];
+    for (int i = 0; i<propArray.count; i++) {
+
+        [valueArray addObject:propDict[propArray[i]]];
+    }
+
+    [WSqlQuery query].insert(_tableName).fieldList(propArray).valueList(valueArray).where([NSString stringWithFormat:@" NOT EXISTS ( SELECT * FROM %@ WHERE %@ )",_tableName,string]);
+    return [[WSqlSession session] exeSqlQuery];
+}
+
+
+/**
+ 插入新数据
+
+ @param fields 要过滤的字段
+ @return 返回操作结果
+ */
+- (BOOL) insertWithoutFields:(NSArray *)fields;
+{
+    NSMutableArray *propArray = [NSMutableArray arrayWithArray:[self getPropertyNames]];
+    [propArray removeObject:@"s_id"];
+    for (NSString *key in fields) {
+        [propArray removeObject:key];
+    }
 
     NSDictionary *propDict = [self getPropertiesAndValues];
 
@@ -82,17 +99,43 @@
 
 
 /**
+ 插入新数据
+
+ @return 返回操作结果
+ */
+- (BOOL) insert;
+{
+    return [self insertWithoutFields:nil];
+}
+
+
+/**
+ 更新数据去掉字段
+
+ @param fields 要去掉的字段
+ @return 返回是否成功
+ */
+- (BOOL) updateWithoutFields:(NSArray *)fields;
+{
+    NSMutableDictionary *propDict = [NSMutableDictionary dictionaryWithDictionary:[self getPropertiesAndValues]];
+    [propDict removeObjectForKey:@"s_id"];
+    for (NSString *key in fields) {
+        [propDict removeObjectForKey:key];
+    }
+
+    [WSqlQuery query].update(_tableName).updateInfo(propDict).where(@"s_id").equals([NSString stringWithFormat:@"%d",self.s_id]);
+    return [[WSqlSession session] exeSqlQuery];
+}
+
+
+/**
  更新数据
 
  @return 返回操作结果
  */
 - (BOOL) update;
 {
-    NSMutableDictionary *propDict = [NSMutableDictionary dictionaryWithDictionary:[self getPropertiesAndValues]];
-    [propDict removeObjectForKey:@"s_id"];
-
-    [WSqlQuery query].update(_tableName).updateInfo(propDict).where(@"s_id").equals([NSString stringWithFormat:@"%d",self.s_id]);
-    return [[WSqlSession session] exeSqlQuery];
+    return [self updateWithoutFields:nil];
 }
 
 
