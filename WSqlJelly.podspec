@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WSqlJelly'
-  s.version          = '0.1.3'
+  s.version          = '0.1.5'
   s.summary          = 'sqllite oc版本的封装，使用链式语法查询数据。'
 
 # This description is used to generate tags and improve search results.

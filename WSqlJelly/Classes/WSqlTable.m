@@ -197,7 +197,6 @@
                          condition:(NSString *)condition
                              Page:(int)page
                             limit:(int)limit;
-
 {
     //数据数组
     if (condition.length > 0) {
