@@ -31,6 +31,11 @@ static dispatch_once_t once;
     return sharedInstance;
 }
 
++ (void) clear;
+{
+    [WSqlQuery query].sqlString = @"";
+}
+
 - (instancetype) init
 {
     self = [super init];
@@ -101,19 +106,19 @@ static dispatch_once_t once;
 
     self.orderBy = ^WSqlQuery *(NSString *string) {
 
-        weakSelf.sqlString = [weakSelf.sqlString stringByAppendingString:[NSString stringWithFormat:@" WHERE %@",string]];
+        weakSelf.sqlString = [weakSelf.sqlString stringByAppendingString:[NSString stringWithFormat:@" ORDER BY %@",string]];
         return weakSelf;
     };
 
     self.groupBy = ^WSqlQuery *(NSString *string) {
 
-        weakSelf.sqlString = [weakSelf.sqlString stringByAppendingString:[NSString stringWithFormat:@" WHERE %@",string]];
+        weakSelf.sqlString = [weakSelf.sqlString stringByAppendingString:[NSString stringWithFormat:@" GROUP BY %@",string]];
         return weakSelf;
     };
 
     self.having = ^WSqlQuery *(NSString *string) {
 
-        weakSelf.sqlString = [weakSelf.sqlString stringByAppendingString:[NSString stringWithFormat:@" WHERE %@",string]];
+        weakSelf.sqlString = [weakSelf.sqlString stringByAppendingString:[NSString stringWithFormat:@" HAVING %@",string]];
         return weakSelf;
     };
 

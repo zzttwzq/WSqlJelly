@@ -78,6 +78,9 @@ typedef NSString *(^getStringBlock)(void);
 + (WSqlQuery *) query;
 
 
++ (void) clear;
+
+
 #pragma mark - 其他方法
 /**
  调试的时候显示调试消息

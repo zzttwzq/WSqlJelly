@@ -78,11 +78,11 @@
 }
 
 /**
- 删除所有
+ 清除表中的所有数据
 
  @return 返回是否成功
  */
-- (BOOL) deleteAll;
+- (BOOL) clearTable;
 {
     [WSqlQuery query].deleteAllFromeTable(self.tableName);
     return [[WSqlSession session] exeSqlQuery];
@@ -115,10 +115,28 @@
 /**
  记录数据
 
+ @return 返回记录数据
+ */
+- (NSInteger) totalCount;
+{
+    [WSqlQuery query].selectCount().fromTable(self.tableName);
+    NSArray *array = [[WSqlSession session] quaryBySqlString:[WSqlQuery query].sql() fieldsList:@[@"count"]];
+
+    if (array.count == 0) {
+        return 0;
+    }
+
+    return [array[0][@"count"] integerValue];
+}
+
+
+/**
+ 记录数据
+
  @param condition 条件
  @return 返回符合条件的所有记录
  */
-- (NSInteger) totalCountWithCondition:(NSString *)condition;
+- (NSInteger) countWithCondition:(NSString *)condition;
 {
     //数据数组
     if (condition.length > 0) {
@@ -138,82 +156,163 @@
 }
 
 
+
 /**
- 记录数据
+ 获取列表信息 (recodeName不填写则返回字典)
 
- @return 返回记录数据
+ @param recordeName 记录类名称
+ @param where where条件
+ @param orderBy orderby条件
+ @return 返回查询到的数据
  */
-- (NSInteger) totalCount;
+- (NSArray *) listWithRecordeName:(NSString *)recordeName
+                            where:(NSString *)where
+                          orderBy:(NSString *)orderBy;
 {
-    [WSqlQuery query].selectCount().fromTable(self.tableName);
-    NSArray *array = [[WSqlSession session] quaryBySqlString:[WSqlQuery query].sql() fieldsList:@[@"count"]];
+    //数据数组
+    if (where.length > 0) {
 
-    if (array.count == 0) {
-        return 0;
+        if (orderBy.length > 0) {
+
+            [WSqlQuery query].select(@"*").fromTable(self.tableName).where(where).orderBy(orderBy);
+        }
+        else{
+
+            [WSqlQuery query].select(@"*").fromTable(self.tableName).where(where);
+        }
     }
 
-    return [array[0][@"count"] integerValue];
+    NSArray *array = [[WSqlSession session] quaryBySqlString:[WSqlQuery query].sql() fieldsList:self.fieldArray];
+
+    if (recordeName.length > 0) {
+
+        NSMutableArray *dataListArray = [NSMutableArray array];
+        for (int i = 0; i<array.count; i++) {
+
+            [dataListArray addObject:[self modelerWithName:recordeName dict:array[i]]];
+        }
+
+        return dataListArray;
+    }
+    else{
+
+        return array;
+    }
 }
+
+
+/**
+ 获取列表信息 (recodeName不填写则返回字典)
+
+ @param recordeName 记录类名称
+ @param page 分页
+ @param limit 每页记录数
+ @param where where条件
+ @param orderBy orderby条件
+ @return 返回查询到的数据
+ */
+- (NSArray *) listWithRecordeName:(NSString *)recordeName
+                             Page:(int)page
+                            limit:(int)limit
+                            where:(NSString *)where
+                          orderBy:(NSString *)orderBy;
+{
+    //数据数组
+    if (where.length > 0) {
+
+        if (orderBy.length > 0) {
+
+            [WSqlQuery query].select(@"*").fromTable(self.tableName).where(where).orderBy(orderBy).limit(page, limit);
+        }
+        else{
+
+            [WSqlQuery query].select(@"*").fromTable(self.tableName).where(where).limit(page, limit);
+        }
+    }
+    else{
+
+        [WSqlQuery query].select(@"*").fromTable(self.tableName).limit(page, limit);
+    }
+
+    NSArray *array = [[WSqlSession session] quaryBySqlString:[WSqlQuery query].sql() fieldsList:self.fieldArray];
+
+    if (recordeName.length > 0) {
+
+        NSMutableArray *dataListArray = [NSMutableArray array];
+        for (int i = 0; i<array.count; i++) {
+
+            [dataListArray addObject:[self modelerWithName:recordeName dict:array[i]]];
+        }
+
+        return dataListArray;
+    }
+    else{
+
+        return array;
+    }
+}
+
 
 /**
  获取列表信息
 
  @param recordeName 记录类名称
- @param condition 条件
  @return 返回模型化的数据列表
  */
-- (NSArray *) listWithRecordeName:(NSString *)recordeName
-                         condition:(NSString *)condition;
+- (NSArray *) listWithRecordeName:(NSString *)recordeName;
 {
     //数据数组
-    if (condition.length > 0) {
-        [WSqlQuery query].select(@"*").fromTable(self.tableName).where(condition);
-    }
-    else{
-        [WSqlQuery query].select(@"*").fromTable(self.tableName);
-    }
+    [WSqlQuery query].select(@"*").fromTable(self.tableName);
+
     NSArray *array = [[WSqlSession session] quaryBySqlString:[WSqlQuery query].sql() fieldsList:self.fieldArray];
 
-    NSMutableArray *dataListArray = [NSMutableArray array];
-    for (int i = 0; i<array.count; i++) {
+    if (recordeName.length > 0) {
 
-        [dataListArray addObject:[self modelerWithName:recordeName dict:array[i]]];
+        NSMutableArray *dataListArray = [NSMutableArray array];
+        for (int i = 0; i<array.count; i++) {
+
+            [dataListArray addObject:[self modelerWithName:recordeName dict:array[i]]];
+        }
+
+        return dataListArray;
     }
+    else{
 
-    return dataListArray;
+        return array;
+    }
 }
 
 
 /**
  分页获取表中的记录数据（返回模型数组）
 
- @param condition 条件
  @param recordeName 模型名称
  @param page 分页
  @param limit 每页记录数
  @return 返回模型数组
  */
 - (NSArray *) listWithRecordeName:(NSString *)recordeName
-                         condition:(NSString *)condition
                              Page:(int)page
                             limit:(int)limit;
 {
     //数据数组
-    if (condition.length > 0) {
-        [WSqlQuery query].select(@"*").fromTable(self.tableName).where(condition).limit(page, limit);
-    }
-    else{
-        [WSqlQuery query].select(@"*").fromTable(self.tableName).limit(page, limit);
-    }
+    [WSqlQuery query].select(@"*").fromTable(self.tableName).limit(page, limit);
     NSArray *array = [[WSqlSession session] quaryBySqlString:[WSqlQuery query].sql() fieldsList:self.fieldArray];
 
-    NSMutableArray *dataListArray = [NSMutableArray array];
-    for (int i = 0; i<array.count; i++) {
+    if (recordeName.length > 0) {
 
-        [dataListArray addObject:[self modelerWithName:recordeName dict:array[i]]];
+        NSMutableArray *dataListArray = [NSMutableArray array];
+        for (int i = 0; i<array.count; i++) {
+
+            [dataListArray addObject:[self modelerWithName:recordeName dict:array[i]]];
+        }
+
+        return dataListArray;
     }
+    else{
 
-    return dataListArray;
+        return array;
+    }
 }
 
 
@@ -239,42 +338,14 @@
 
 
 /**
- 添加字段
-
- @param column 字段内容
- @return 返回是否成功
- */
-- (BOOL) addColumn:(NSString *)column;
-{
-    [WSqlQuery query].alert(self.tableName).addColumn(column);
-    return [[WSqlSession session] exeSqlQuery];
-}
-
-
-/**
- 修改字段名字
-
- @param column 要修改的字段
- @param toName 修改的字段名字
- @return 返回是否成功
- */
-- (BOOL) renameColumn:(NSString *)column
-               toName:(NSString *)toName;
-{
-    [WSqlQuery query].alert(self.tableName).renameColumn(column, toName);
-    return [[WSqlSession session] exeSqlQuery];
-}
-
-
-/**
  记录是否存在，返回记录  如果不填写recodename 就返回记录的字典
 
  @param recorde 字符串填写条件，比如 id = 1
  @param recordeName 记录类名称
  @return 返回记录的字典
  */
-- (NSArray *) recordeExistsWithCondition:(NSString *)recorde
-                             recordeName:(NSString *)recordeName;
+- (NSArray *) existRecordeWithCondition:(NSString *)recorde
+                            recordeName:(NSString *)recordeName;
 {
         //数据数组
     [WSqlQuery query].select(@"*").fromTable(self.tableName).where(recorde);
@@ -294,6 +365,35 @@
     return dataListArray;
 }
 
+
+/**
+ 添加字段
+
+ @param columnDescription 字段内容
+ @return 返回是否成功
+ */
+- (BOOL) addColumnWithDescription:(NSString *)columnDescription;
+{
+    [WSqlQuery query].alert(self.tableName).addColumn(columnDescription);
+    return [[WSqlSession session] exeSqlQuery];
+}
+
+
+/**
+ 修改字段名字
+
+ @param column 要修改的字段
+ @param toName 修改的字段名字
+ @return 返回是否成功
+ */
+- (BOOL) renameColumn:(NSString *)column
+               toName:(NSString *)toName;
+{
+    [WSqlQuery query].alert(self.tableName).renameColumn(column, toName);
+    return [[WSqlSession session] exeSqlQuery];
+}
+
+
 #pragma mark - 多表数据操作
 
 - (void) leftJoinWithTable:(NSString *)tableName
@@ -303,7 +403,7 @@
                     result:(void(^)(NSArray *array))result;
 {
     [WSqlQuery query].select(field).fromTable(self.tableName).leftJoin(tableName).onCondition(condition);
-    result([self listWithRecordeName:recodeName condition:nil]);
+    result([self listWithRecordeName:recodeName]);
 }
 
 - (void) rightJoinWithTable:(NSString *)tableName
@@ -313,7 +413,7 @@
                     result:(void(^)(NSArray *array))result;
 {
     [WSqlQuery query].select(field).fromTable(self.tableName).rightJoin(tableName).onCondition(condition);
-    result([self listWithRecordeName:recodeName condition:nil]);
+    result([self listWithRecordeName:recodeName]);
 }
 
 
@@ -324,7 +424,7 @@
                      result:(void(^)(NSArray *array))result;
 {
     [WSqlQuery query].select(field).fromTable(self.tableName).crossJoin(tableName).onCondition(condition);
-    result([self listWithRecordeName:recodeName condition:nil]);
+    result([self listWithRecordeName:recodeName]);
 }
 
 
@@ -335,7 +435,7 @@
                      result:(void(^)(NSArray *array))result;
 {
     [WSqlQuery query].select(field).fromTable(self.tableName).innerJoin(tableName).onCondition(condition);
-    result([self listWithRecordeName:recodeName condition:nil]);
+    result([self listWithRecordeName:recodeName]);
 }
 
 
@@ -346,7 +446,7 @@
                      result:(void(^)(NSArray *array))result;
 {
     [WSqlQuery query].select(field).fromTable(self.tableName).outerJoin(tableName).onCondition(condition);
-    result([self listWithRecordeName:recodeName condition:nil]);
+    result([self listWithRecordeName:recodeName]);
 }
 
 
