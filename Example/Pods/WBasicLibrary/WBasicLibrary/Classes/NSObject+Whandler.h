@@ -5,7 +5,8 @@
 //  Created by 吴志强 on 2018/7/9.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "MicroDefinetion.h"
 
 @interface NSObject (Whandler)
 

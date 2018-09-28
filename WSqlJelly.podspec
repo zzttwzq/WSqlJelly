@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WSqlJelly'
-  s.version          = '0.1.6'
+  s.version          = '0.1.7'
   s.summary          = 'sqllite oc版本的封装，使用链式语法查询数据。'
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-sqllite oc版本的封装，使用链式语法查询数据。
+sqllite oc版本的封装，使用链式语法查询数据等。
                        DESC
 
   s.homepage         = 'https://github.com/zzttwzq/WSqlJelly'
@@ -38,5 +38,5 @@ sqllite oc版本的封装，使用链式语法查询数据。
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'WExpandLibrary'
 end

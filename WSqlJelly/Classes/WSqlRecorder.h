@@ -6,7 +6,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NSObject+Whandler.h"
 #import "WSqlSession.h"
 
 @interface WSqlRecorder : NSObject

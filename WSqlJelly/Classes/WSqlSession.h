@@ -9,9 +9,9 @@
 #import <sqlite3.h>
 #import <malloc/malloc.h>
 
-#import "WFileManager.h"
 #import "WSqlQuery.h"
-#import "NSObject+Whandler.h"
+#import <WBasicLibrary/WBasicHeader.h>
+#import <WExpandLibrary/WExpandHeader.h>
 
 typedef void (^queryBlock)(sqlite3_stmt * _Nullable satement);
 

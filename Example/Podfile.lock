@@ -1,15 +1,50 @@
 PODS:
-  - WSqlJelly (0.1.0)
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
+  - WBasicLibrary (0.4.0):
+    - AFNetworking
+  - WExpandLibrary (0.2.2):
+    - SDWebImage
+    - WBasicLibrary
+  - WSqlJelly (0.1.6):
+    - WExpandLibrary
 
 DEPENDENCIES:
   - WSqlJelly (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - SDWebImage
+    - WBasicLibrary
+    - WExpandLibrary
 
 EXTERNAL SOURCES:
   WSqlJelly:
     :path: "../"
 
 SPEC CHECKSUMS:
-  WSqlJelly: 147dbe289088e7cc077076a19007962f56d99bed
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  WBasicLibrary: a995a7320c56706d2e3c5ec626fbd3a5bb3fbe8f
+  WExpandLibrary: eed0cdaa864c1602d781c9d4745891c650dce54a
+  WSqlJelly: bd04a096233fe696e34d061a10f4a3c2b6080eef
 
 PODFILE CHECKSUM: cad5069416259e462660d88429ac77cd2f821d4c
 

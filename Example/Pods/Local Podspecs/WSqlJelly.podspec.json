@@ -1,8 +1,8 @@
 {
   "name": "WSqlJelly",
-  "version": "0.1.0",
-  "summary": "A short description of WSqlJelly.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "0.1.6",
+  "summary": "sqllite oc版本的封装，使用链式语法查询数据。",
+  "description": "sqllite oc版本的封装，使用链式语法查询数据。",
   "homepage": "https://github.com/zzttwzq/WSqlJelly",
   "license": {
     "type": "MIT",
@@ -13,10 +13,15 @@
   },
   "source": {
     "git": "https://github.com/zzttwzq/WSqlJelly.git",
-    "tag": "0.1.0"
+    "tag": "0.1.6"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "WSqlJelly/Classes/**/*"
+  "source_files": "WSqlJelly/Classes/**/*",
+  "dependencies": {
+    "WExpandLibrary": [
+
+    ]
+  }
 }
