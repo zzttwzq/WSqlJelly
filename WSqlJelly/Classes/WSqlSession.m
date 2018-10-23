@@ -171,9 +171,12 @@ static dispatch_once_t once;
                     if (name) {
                         
                         NSString *string = [NSString stringWithUTF8String:name];
-                        string = [string stringByRemovingPercentEncoding];
+//                        string = [string stringByRemovingPercentEncoding];
 
-                        [dict setObject:string forKey:key];
+                        if (string) {
+                            
+                            [dict setObject:string forKey:key];
+                        }
                     }
                 }
                 [listArray addObject:dict];

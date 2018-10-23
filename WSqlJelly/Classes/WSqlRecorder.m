@@ -90,7 +90,12 @@
     NSMutableArray *valueArray = [NSMutableArray array];
     for (int i = 0; i<propArray.count; i++) {
 
-        [valueArray addObject:propDict[propArray[i]]];
+        if (propDict[propArray[i]]) {
+            [valueArray addObject:propDict[propArray[i]]];
+        }
+        else{
+            [valueArray addObject:@""];
+        }
     }
 
     [WSqlQuery query].insert(_tableName).fieldList(propArray).valueList(valueArray);

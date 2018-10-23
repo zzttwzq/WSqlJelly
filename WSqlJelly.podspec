@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WSqlJelly'
-  s.version          = '0.1.7'
+  s.version          = '0.1.8'
   s.summary          = 'sqllite oc版本的封装，使用链式语法查询数据。'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ sqllite oc版本的封装，使用链式语法查询数据等。
   s.source           = { :git => 'https://github.com/zzttwzq/WSqlJelly.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'WSqlJelly/Classes/**/*'
   

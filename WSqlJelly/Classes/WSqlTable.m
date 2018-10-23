@@ -37,7 +37,7 @@
     [WSqlQuery query].createTable(tableName).tableFieldList(keyArray).fieldAndInfo(infoDic);
     BOOL flag = [[WSqlSession session] exeSqlQuery];
 
-    if (flag) {
+    if (!flag) {
 
         WSqlTable *table = [WSqlTable new];
         table.tableName = tableName;
@@ -181,6 +181,10 @@
             [WSqlQuery query].select(@"*").fromTable(self.tableName).where(where);
         }
     }
+    else{
+
+        [WSqlQuery query].select(@"*").fromTable(self.tableName);
+    }
 
     NSArray *array = [[WSqlSession session] quaryBySqlString:[WSqlQuery query].sql() fieldsList:self.fieldArray];
 
@@ -241,7 +245,10 @@
         NSMutableArray *dataListArray = [NSMutableArray array];
         for (int i = 0; i<array.count; i++) {
 
-            [dataListArray addObject:[self modelerWithName:recordeName dict:array[i]]];
+            NSObject *obj = [self modelerWithName:recordeName dict:array[i]];
+            if (obj) {
+                [dataListArray addObject:obj];
+            }
         }
 
         return dataListArray;

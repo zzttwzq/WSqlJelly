@@ -291,7 +291,7 @@ static dispatch_once_t once;
                      [value containsString:@"mediumint"]||
                      [value containsString:@"bigint"]){
 
-                propertystring = [propertystring stringByAppendingString:[NSString stringWithFormat:@"@property(nonatomic,assign)int %@;\n",key]];
+                propertystring = [propertystring stringByAppendingString:[NSString stringWithFormat:@"@property(nonatomic,assign)NSInterger %@;\n",key]];
             }
             else if ([value containsString:@"real"]||
                      [value containsString:@"float"]||
@@ -305,7 +305,7 @@ static dispatch_once_t once;
             }
             else if ([key containsString:@"s_id"]){
 
-                propertystring = [propertystring stringByAppendingString:[NSString stringWithFormat:@"@property(nonatomic,assign)int %@;\n",key]];
+                propertystring = [propertystring stringByAppendingString:[NSString stringWithFormat:@"@property(nonatomic,assign)NSInterger %@;\n",key]];
             }
         }
         string = [string substringToIndex:string.length-1]; //去掉，号
