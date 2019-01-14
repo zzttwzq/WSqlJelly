@@ -14,8 +14,16 @@
 @end
 
 @implementation WSqlRecorder
+
+/**
+ 获取记录实例
+
+ @param tableName 表名
+ */
++ (instancetype) recorderWithTableName:(NSString *)tableName; //设置表名
 {
-    NSString *_tableName;
+    WSqlRecorder *recorder = [[WSqlRecorder alloc] initWithTableName:tableName];
+    return recorder;
 }
 
 
@@ -33,17 +41,6 @@
         _tableName = tableName;
     }
     return self;
-}
-
-
-/**
- 设置数据表名
-
- @param tableName 数据表名
- */
-- (void) setTableName:(NSString *)tableName;
-{
-    _tableName = tableName;
 }
 
 

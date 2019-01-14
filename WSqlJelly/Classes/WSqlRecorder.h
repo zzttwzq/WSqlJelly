@@ -11,28 +11,25 @@
 @interface WSqlRecorder : NSObject
 
 /**
+ 设置表名
+ */
+@property (nonatomic,copy) NSString *tableName;
+
+/**
+ 获取记录实例
+
+ @param tableName 表名
+ */
++ (instancetype) recorderWithTableName:(NSString *)tableName;
+
+
+/**
  创建记录模型
 
  @param tableName 表名
  @return 返回模型
  */
 - (instancetype) initWithTableName:(NSString *)tableName;
-
-
-/**
- 设置数据表名
-
- @param tableName 数据表名
- */
-- (void) setTableName:(NSString *)tableName;
-
-
-/**
- 插入新数据或者更新旧的数据
-
- @return 返回操作结果
- */
-
 
 
 /**
@@ -47,18 +44,18 @@
 /**
  插入新数据
 
+ @param fields 要过滤的字段
  @return 返回操作结果
  */
-- (BOOL) insert;
+- (BOOL) insertWithoutFields:(NSArray *)fields;
 
 
 /**
  插入新数据
 
- @param fields 要过滤的字段
  @return 返回操作结果
  */
-- (BOOL) insertWithoutFields:(NSArray *)fields;
+- (BOOL) insert;
 
 
 /**

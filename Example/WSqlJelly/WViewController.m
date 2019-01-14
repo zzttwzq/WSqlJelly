@@ -7,7 +7,7 @@
 //
 
 #import "WViewController.h"
-#import <WSqlJelly/WSqlQuery.h>
+#import <WSqlJelly/WSqlHeader.h>
 
 @interface WViewController ()
 
@@ -19,8 +19,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-
-    [WSqlQuery query];
 }
 
 - (void)didReceiveMemoryWarning

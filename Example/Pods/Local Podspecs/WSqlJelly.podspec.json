@@ -1,8 +1,8 @@
 {
   "name": "WSqlJelly",
-  "version": "0.1.6",
+  "version": "0.1.9",
   "summary": "sqllite oc版本的封装，使用链式语法查询数据。",
-  "description": "sqllite oc版本的封装，使用链式语法查询数据。",
+  "description": "sqllite oc版本的封装，使用链式语法查询数据等。",
   "homepage": "https://github.com/zzttwzq/WSqlJelly",
   "license": {
     "type": "MIT",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/zzttwzq/WSqlJelly.git",
-    "tag": "0.1.6"
+    "tag": "0.1.9"
   },
   "platforms": {
     "ios": "8.0"
